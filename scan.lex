@@ -18,10 +18,11 @@ WS	[ \t\n]
 D	[0-9]
 L	[A-Za-z_]
 
-COMM (\/\*)(.|\n)*(\*\/)
+COMM (\/\*)(\*[^\/]|[^\*])*(\*\/)
 INT	{D}+
 FLOAT {INT}(\.{INT})?([Ee][+-]?{INT})?
 ID	{L}({L}|{D})*
+STR \"([^\"]|\\\"|{WS})+\"
 
 %%
     /* Padrões e ações. Nesta seção, comentários devem ter um tab antes */
@@ -41,6 +42,8 @@ ID	{L}({L}|{D})*
     */
 
 {COMM}  {return _COMENTARIO;}
+
+{STR} {return _STRING;}
 
 {INT}   {return _INT;}
 
