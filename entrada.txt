@@ -3,12 +3,24 @@
 123
 1.3552
 
+1.232e-3
+
+1E3
+
+1.51e+10
+
+a = "teste"
+
+"teste \"escape\" "
+
+"duas" "strings"
+
+"aqui tem ""escape"" "
+
 asasdasda
 /* /* */ */
 
 /* segundo */
-
-124345
 
 /*1231231212*/ 
 
@@ -27,7 +39,6 @@ asd12235234q2rfasdf23r----
 
 
 /* 
-
       		*/
 
 /* --++||\

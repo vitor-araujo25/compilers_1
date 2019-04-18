@@ -22,7 +22,7 @@ COMM \/\/[^\n\r\t]*|(\/\*)(\*[^\/]|[^\*])*(\*\/)
 INT	{D}+
 FLOAT {INT}(\.{INT})?([Ee][+-]?{INT})?
 ID	{L}({L}|{D})*
-STR \"([^\"]|\\\"|{WS})+\"
+STR \"([^\"\n\t\r]|\\\"|\ |\"\")*\" 
 
 %%
     /* Padrões e ações. Nesta seção, comentários devem ter um tab antes */
