@@ -12,13 +12,13 @@ enum TOKEN { _ID = 256, _FOR, _IF, _INT, _FLOAT, _MAIG, _MEIG, _IG, _DIF, _STRIN
 %}
 
 
-/* Coloque aqui definições regulares */
+	/* Coloque aqui definições regulares */
 
 WS	[ \t\n]
 D	[0-9]
 L	[A-Za-z_]
 
-COMM (\/\*)(.|\n)*(\*\/)
+COMM \/\/[^\n\r\t]*|(\/\*)(\*[^\/]|[^\*])*(\*\/) 
 INT	{D}+
 FLOAT {INT}(\.{INT})?([Ee][+-]?{INT})?
 ID	{L}({L}|{D})*
