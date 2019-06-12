@@ -1,0 +1,7 @@
+aba = "aba";
+cate = "cate";
+x1 = 10;
+y1 = 3.14;
+cc = aba + cate + " " + aba + cate;
+d = cc + cc;
+d = 1.0 / x1 + y1 - 0 * x1 * 2;
