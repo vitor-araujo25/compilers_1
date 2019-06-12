@@ -1,3 +1,7 @@
 .vscode
-saida
-lex.yy.c
+*/saida
+*/lex.yy.c
+*/y.tab.c
+*/compilador
+*/programa_gerado
+*/codigo.cc

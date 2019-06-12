@@ -40,8 +40,11 @@ void imprime_saida( Atributos s1 );
 
 %%
 
-S : L          { imprime_saida( $1 ); }
+S : V          { imprime_saida( $1 ); }
     ;
+
+V : LE
+  ;
   
 L :	'(' LE ')'		{ $$ = $2; }
     | '(' ')'    { $$ = gera_lista_vazia(); }
